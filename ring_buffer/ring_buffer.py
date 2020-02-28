@@ -53,7 +53,7 @@ class ArrayRingBuffer:
         self.storage[self.current] = item
 
     def get(self):
-        return [x for x in self.storage if x is not None]
+        return [elem for elem in self.storage if elem]
 
 
 a = RingBuffer(3)
